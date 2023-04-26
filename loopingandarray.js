@@ -15,7 +15,7 @@ for (let i = 0; i <= 10000; i++) {
     }
 }
 // Top 5 favorite 
-const favoriteTVShows = ['Breaking Bad', 'The Office', 'Game of Thrones', 'Stranger Things', 'The Crown'];
+const favoriteTVShows = ['South Park', 'Family guy', 'Spongebob', 'Riverdale', 'The 100'];
 for (let i = 0; i < favoriteTVShows.length; i++) {
     console.log("My #" + (i+1) + " favorite tv show is " + favoriteTVShows[i]);
 }
