@@ -1,10 +1,15 @@
 let wins = 0;
-let ties = 0;
+
 let losses = 0;
 
+let ties = 0;
+
 function computerChoice() {
+
   const choices = ["rock", "paper", "scissors"];
+
   const randomIndex = Math.floor(Math.random() * 3);
+
   return choices[randomIndex];
 }
 
@@ -19,14 +24,16 @@ function playRound(userChoice) {
     if (computer === "scissors") {
 
       result = "win";
+
     } else if (computer === "paper") {
     
       result = "lose";
-      
+
     } else {
       result = "tie";
     }
   } else if (userChoice === "paper") {
+
     if (computer === "rock") {
       result = "win";
 
@@ -36,6 +43,7 @@ function playRound(userChoice) {
       result = "tie";}
 
   } else if (userChoice === "scissors") {
+
     if (computer === "paper") {
       result = "win";
     } else if (computer === "rock") {
@@ -54,20 +62,19 @@ function playRound(userChoice) {
   }
   document.getElementById("wins").innerHTML = wins;
 
+
   document.getElementById("ties").innerHTML = ties;
+
 
   document.getElementById("losses").innerHTML = losses;
 
 }
 
 document.getElementById("rock").addEventListener("click", function() {
-  playRound("rock");
-});
+  playRound("rock");});
 
 document.getElementById("paper").addEventListener("click", function() {
-  playRound("paper");
-});
+  playRound("paper");});
 
 document.getElementById("scissors").addEventListener("click", function() {
-  playRound("scissors");
-});
+  playRound("scissors");});
