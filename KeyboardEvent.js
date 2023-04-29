@@ -9,7 +9,7 @@ document.body.addEventListener('keydown', function(event) {
 
     const message = document.createElement('p');
 
-    message.textContent = `secret key ${secretLetter.toUpperCase()} PRESSED`;
+    message.textContent = `SECRET KEY ${secretLetter.toUpperCase()} PRESSED`;
 
     document.body.appendChild(message);
 
