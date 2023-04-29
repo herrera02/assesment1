@@ -62,13 +62,9 @@ function playRound(userChoice) {
   }
   document.getElementById("wins").innerHTML = wins;
 
-
   document.getElementById("ties").innerHTML = ties;
 
-
-  document.getElementById("losses").innerHTML = losses;
-
-}
+  document.getElementById("losses").innerHTML = losses;}
 
 document.getElementById("rock").addEventListener("click", function() {
   playRound("rock");});
