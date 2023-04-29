@@ -50,16 +50,20 @@ function playRound(userChoice) {
 
       result = "lose";
     } else {
-      result = "tie";}
-
-  }
+      result = "tie";}}
+      
   if (result === "win") {
+
     wins++;
+
   } else if (result === "lose") {
+
     losses++;
+
   } else {
-    ties++;
-  }
+
+    ties++; }
+
   document.getElementById("wins").innerHTML = wins;
 
   document.getElementById("ties").innerHTML = ties;
